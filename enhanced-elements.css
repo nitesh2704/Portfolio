@@ -1,0 +1,183 @@
+/* Project Cards Enhanced Styles */
+.project-card {
+    padding: 1.5rem;
+    background: rgba(10, 20, 15, 0.4);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+}
+
+.project-card:hover {
+    background: rgba(10, 20, 15, 0.5);
+    border-color: rgba(34, 197, 94, 0.3);
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        0 0 20px rgba(34, 197, 94, 0.2);
+}
+
+/* Skill Tags Enhanced Styles */
+.skill-tag {
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    font-size: 0.9rem;
+    background: rgba(10, 20, 15, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.skill-tag:hover {
+    background: rgba(34, 197, 94, 0.1);
+}
+
+/* Social Links Enhanced Styles */
+.social-link {
+    padding: 0.75rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(10, 20, 15, 0.3);
+}
+
+.social-link:hover {
+    background: rgba(34, 197, 94, 0.1);
+    transform: translateY(-2px) scale(1.1);
+}
+
+/* Form Elements Enhanced Styles */
+.form-input,
+.form-textarea {
+    background: rgba(10, 20, 15, 0.3);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    color: var(--color-text);
+    transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: rgba(34, 197, 94, 0.4);
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.1);
+    outline: none;
+}
+
+/* Navigation Menu Enhanced */
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: var(--color-green-accent);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Timeline and Experience Items */
+.timeline-item,
+.experience-card {
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover,
+.experience-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(10, 20, 15, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(34, 197, 94, 0.2);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-top:hover {
+    background: rgba(34, 197, 94, 0.2);
+    border-color: rgba(34, 197, 94, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Progress Bars */
+.progress-bar {
+    background: rgba(10, 20, 15, 0.3);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    background: linear-gradient(90deg,
+            rgba(34, 197, 94, 0.2),
+            rgba(34, 197, 94, 0.4));
+    backdrop-filter: blur(5px);
+    height: 100%;
+    transition: width 1s ease;
+}
+
+/* Contact Section Enhanced */
+.contact-info-item {
+    background: rgba(10, 20, 15, 0.3);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-info-item:hover {
+    background: rgba(10, 20, 15, 0.4);
+    border-color: rgba(34, 197, 94, 0.3);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Animated Icons/Logos */
+.tech-icon {
+    background: rgba(10, 20, 15, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(34, 197, 94, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+.tech-icon:hover {
+    background: rgba(34, 197, 94, 0.1);
+    border-color: rgba(34, 197, 94, 0.3);
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.2);
+}
